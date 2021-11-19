@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">Todo App</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mainContainerWapper">
+        <div class="row mt-5">
+            <div class="col-11 col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="inputWapper d-flex flex-column flex-md-row text-center">
+                                    <div class="input-group m-3">
+                                     <input type="text" id="toDoInput" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Add Your ToDo">
+                                     <input type="hidden" id="saveIndex"> 
+                                    </div>
+                                    <div class="buttons d-flex">
+                                        <button class="btn btn-primary m-3" id="addToDoBtn">AddTodo</button> 
+                                        <button class="btn btn-primary m-3" id="saveToDoBtn">SaveTodo</button>   
+                                        <button class="btn btn-danger m-3" id="deleteAllDoBtn">DeleteAll</button> 
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+
+                        <!-- todo List  -->
+
+                        <div class="row">
+                            <div class="col-12 m-3">
+                                <div class="todoListWrapper">
+                                    <table class="table" id="todoTable">
+                                        <!-- <tbody>
+                                            <tr>
+                                              <th scope="row">${index + 1}</th>
+                                              <td>${item}</td>
+                                              <td><button onClick="editTask(${index})"><i class="far fa-edit"></i></button></td>
+                                              <td><button><i class="far fa-trash-alt"></i></button></td>
+                                            </tr>
+                                            
+                                            </tbody> -->
+                                       
+                                      </table>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
